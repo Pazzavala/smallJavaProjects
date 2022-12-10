@@ -35,6 +35,8 @@ public class Student {
 
         setUniqueID();
         enroll();
+
+        in.close();
     }
 
     // Generate an ID
@@ -59,6 +61,7 @@ public class Student {
                 courses.add(course);
                 tuitionBalance += courseCost;
             }
+            in.close();
 
         } while (!course.equals("q"));
     }
@@ -80,6 +83,8 @@ public class Student {
         System.out.println("Thank you your payment of $" + payment);
 
         viewTuitionBalance();
+
+        in.close();
     }
 
     // Check student status

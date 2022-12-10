@@ -1,7 +1,6 @@
 package Emailapp;
 
 import java.util.Scanner;
-import java.util.SplittableRandom;
 
 public class Email {
     private String firstName;

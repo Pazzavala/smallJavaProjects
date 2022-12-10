@@ -24,6 +24,6 @@ public class StudentDatabaseApp {
             System.out.println(students[i].toString());
         }
 
-
+        in.close();
     }
 }
