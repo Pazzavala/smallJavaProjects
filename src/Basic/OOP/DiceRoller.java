@@ -23,4 +23,10 @@ public class DiceRoller {
         number = rand.nextInt(6)+1;
         System.out.println(number);
     }
+
+    public static void main(String[] args) {
+        DiceRoller dice1 = new DiceRoller();
+
+        dice1.roll();
+    }
 }

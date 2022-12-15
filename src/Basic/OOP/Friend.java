@@ -1,4 +1,4 @@
-package Basic;
+package Basic.OOP;
 
 public class Friend {
     String name;
@@ -7,5 +7,9 @@ public class Friend {
     Friend(String name) {
         this.name = name;
         numberOfFriends++;
+    }
+
+    static void displayFriends() {
+        System.out.println("You have " + numberOfFriends + " friends.");
     }
 }

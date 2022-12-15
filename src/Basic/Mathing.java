@@ -18,6 +18,7 @@ public class Mathing {
         System.out.println(Math.sqrt(9));
 
         // Rounded 3.14
+        // Static method
         System.out.println(Math.round(x));
 
         // Ceiling of 3.14 -> 4
@@ -25,6 +26,7 @@ public class Mathing {
 
         // floor of 3.14
         System.out.println(Math.floor(z));
+
 
 
         // Find hypotenuse of triangle
