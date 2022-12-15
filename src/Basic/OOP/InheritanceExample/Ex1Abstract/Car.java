@@ -17,6 +17,11 @@ public class Car extends Vehicle {
 
     public Car() {}
 
+    // making a constructor to copy an object
+    public Car(Car car) {
+        this.copy(car);
+    }
+
     public Car(String make, String model) {
         this.make = make;
         this.model = model;
@@ -27,6 +32,12 @@ public class Car extends Vehicle {
         this.model = model;
         this.year = year;
         this.color = color;
+    }
+
+    public void copy(Car car) {
+        this.setMake(car.getMake());
+        this.setModel(car.getModel());
+        this.setYear(car.getYear());
     }
 
     //  Here is our abstract method from vehicle class
@@ -45,6 +56,29 @@ public class Car extends Vehicle {
         System.out.println("Your stopped driving");
     }
 
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public String getModel() {
+        return this.model;
+    }
+
+    public String getMake() {
+        return this.make;
+    }
+
+    public int getYear() {
+        return this.year;
+    }
 
     // Even though our attributes are orivate we can see them using this method.
     void info() {
