@@ -1,2 +1,8 @@
-package Basic.OOP.Poly;public class Bicycle {
+package Basic.OOP.Poly;
+
+public class Bicycle extends Vehicle{
+
+    public void go() {
+        System.out.println("The bicycle begins to move");
+    }
 }

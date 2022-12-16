@@ -1,4 +1,6 @@
 package Basic.OOP.Interfaces;
 
-public interface Predetor {
+public interface Predator {
+
+    void hunt();
 }

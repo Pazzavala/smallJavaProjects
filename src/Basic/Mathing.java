@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class Mathing {
     public static void main(String[] args) {
-        double x = 3.14;
+
+//        Anything with final keyword cant be changed later
+        final double x = 3.14;
         double y = -10;
 
         //  Find max value

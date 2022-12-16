@@ -1,2 +1,8 @@
-package Basic.OOP.Poly;public class Cat {
+package Basic.OOP.Poly;
+
+public class Cat extends Animal {
+    @Override
+    public void speak() {
+        System.out.println("Cat goes MEOW");
+    }
 }

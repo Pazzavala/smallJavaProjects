@@ -1,4 +1,4 @@
-package Basic.OOP.InheritanceExample.Ex1Abstract;
+package Basic.OOP.InheritanceExample.Abstraction;
 
 public class Bicycle extends Vehicle {
     int wheels = 2;

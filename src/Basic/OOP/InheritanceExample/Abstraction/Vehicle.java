@@ -1,4 +1,4 @@
-package Basic.OOP.InheritanceExample.Ex1Abstract;
+package Basic.OOP.InheritanceExample.Abstraction;
 
 public abstract class Vehicle {
     double speed;

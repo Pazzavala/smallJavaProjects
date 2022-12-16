@@ -16,7 +16,7 @@ public class LinearQueue <T> implements Iterable <T> {
 		this.capacity = capacity;
 		this.head = this.tail = -1;
 
-		arr =  new Object[capacity](<T>);
+//		arr =  new Object[capacity](<T>);
 	}
 
 	// Return the size of the queue

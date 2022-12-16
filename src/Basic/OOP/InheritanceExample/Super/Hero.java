@@ -1,4 +1,4 @@
-package Basic.OOP.InheritanceExample.Ex2Super;
+package Basic.OOP.InheritanceExample.Super;
 
 public class Hero extends Person{
     String power;
