@@ -14,7 +14,7 @@ public class BorderLayouts {
     public static void main(String[] args) {
 
         JFrame frame = new JFrame();
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500,500);
 //        The arguments 10, 10 are margin to panels
         frame.setLayout(new BorderLayout(10, 10)); // this is already default but we still adding it for ex

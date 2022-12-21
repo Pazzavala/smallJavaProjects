@@ -12,7 +12,7 @@ public class GridLayouts {
 
     public static void main(String[] args) {
         JFrame frame = new JFrame();
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500,500);
 //        arguments to gridLayout rows, columns, horiz margin, verti margin
         frame.setLayout(new GridLayout(3, 3, 10, 10));

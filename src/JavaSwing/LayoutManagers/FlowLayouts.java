@@ -11,7 +11,7 @@ public class FlowLayouts {
 //                        the flowLayout class uses the next available row.
     public static void main(String[] args) {
         JFrame frame = new JFrame();
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 500);
         frame.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 10));
 
