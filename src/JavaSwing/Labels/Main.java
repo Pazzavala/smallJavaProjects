@@ -6,7 +6,7 @@ import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-        ImageIcon image = new ImageIcon("jinx3.jpg");
+        ImageIcon image = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\jinx3.jpg");
 
         Border border = BorderFactory.createLineBorder(Color.PINK, 3);
 

@@ -24,7 +24,7 @@ public class Main {
 
         String[] responses = {"No, You are cool", "Thank You!", "*BLUSH*"};
 
-        ImageIcon icon = new ImageIcon("icons8-black-cat-48.png");
+        ImageIcon icon = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\icons8-black-cat-48.png");
 
         JOptionPane.showOptionDialog(null, "You are cool", "Secrete", JOptionPane.YES_NO_CANCEL_OPTION,
                 JOptionPane.INFORMATION_MESSAGE, icon, responses, 0);

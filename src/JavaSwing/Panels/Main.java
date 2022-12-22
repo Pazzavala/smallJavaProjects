@@ -6,19 +6,19 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
         JLabel label1 = new JLabel("Hello");
-        ImageIcon icon1 = new ImageIcon("red.png");
+        ImageIcon icon1 = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\red.png");
         label1.setIcon(icon1);
         label1.setForeground(Color.WHITE);
         label1.setBounds(100, 100, 200, 200);
 
         JLabel label2 = new JLabel("BYE");
-        ImageIcon icon2 = new ImageIcon("finger.png");
+        ImageIcon icon2 = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\finger.png");
         label2.setIcon(icon2);
         label2.setVerticalAlignment(JLabel.TOP);
         label2.setForeground(Color.WHITE);
 
         JLabel label3 = new JLabel("OOPS");
-        ImageIcon icon3 = new ImageIcon("insta.png");
+        ImageIcon icon3 = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\insta.png");
         label3.setIcon(icon3);
         label3.setVerticalAlignment(JLabel.TOP);
         label3.setHorizontalAlignment(JLabel.CENTER);

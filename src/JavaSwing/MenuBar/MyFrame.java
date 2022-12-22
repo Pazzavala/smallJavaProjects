@@ -11,9 +11,9 @@ public class MyFrame extends JFrame implements ActionListener {
     JMenuItem saveItem;
     JMenuItem exitItem;
 
-    ImageIcon load = new ImageIcon("folder.png");
-    ImageIcon save = new ImageIcon("save.png");
-    ImageIcon exit = new ImageIcon("exit.png");
+    ImageIcon load = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\folder.png");
+    ImageIcon save = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\save.png");
+    ImageIcon exit = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\exit.png");
     MyFrame() {
         JMenuBar menuBar = new JMenuBar();
 

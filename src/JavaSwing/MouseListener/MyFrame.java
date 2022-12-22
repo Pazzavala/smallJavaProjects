@@ -1,7 +1,6 @@
 package JavaSwing.MouseListener;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -13,7 +12,7 @@ public class MyFrame extends JFrame implements MouseListener {
         label.setBounds(0, 0, 100, 100);
         label.addMouseListener(this);
 
-        image = new ImageIcon("Mexico.png");
+        image = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\Mexico.png");
         label.setIcon(image);
 
         this.add(label);
@@ -34,14 +33,14 @@ public class MyFrame extends JFrame implements MouseListener {
     public void mousePressed(MouseEvent e) {
 //        Invoked when a mouse button has been pressed on a component
         System.out.println("You pressed the mouse");
-        label.setIcon(image = new ImageIcon("rainbow.png"));
+        label.setIcon(image = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\rainbow.png"));
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
 //        Invoked when a mouse button has been released on a component
         System.out.println("You Released the mouse");
-        label.setIcon(image = new ImageIcon("US.png"));
+        label.setIcon(image = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\US.png"));
 
     }
 
@@ -49,13 +48,13 @@ public class MyFrame extends JFrame implements MouseListener {
     public void mouseEntered(MouseEvent e) {
 //        Invoked when a mouse enters a component
         System.out.println("You entered the Component");
-        label.setIcon(image = new ImageIcon("Mexico.png"));
+        label.setIcon(image = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\Mexico.png"));
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
 //        Invoked when a mouse exits a component
         System.out.println("You Exited the Component");
-        label.setIcon(image = new ImageIcon("argentina.png"));
+        label.setIcon(image = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\argentina.png"));
     }
 }

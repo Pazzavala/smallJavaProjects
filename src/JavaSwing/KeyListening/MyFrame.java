@@ -10,7 +10,7 @@ public class MyFrame extends JFrame implements KeyListener {
     ImageIcon image;
     MyFrame() {
         label = new JLabel();
-        image = new ImageIcon("car.png");
+        image = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\car.png");
 
         label.setBounds(0, 0, 100, 100);
         label.setIcon(image);

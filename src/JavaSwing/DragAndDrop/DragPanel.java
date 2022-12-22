@@ -7,7 +7,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 
 public class DragPanel extends JPanel {
-    ImageIcon image = new ImageIcon("dribble.png");
+    ImageIcon image = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\dribble.png");
     final int WIDTH = image.getIconWidth();
     final int HEIGHT = image.getIconHeight();
     Point imageCorner;
