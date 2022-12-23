@@ -1,4 +1,4 @@
-package JavaSwing.FRAME;
+package JavaSwing.Frame;
 
 import javax.swing.*;
 import java.awt.*;

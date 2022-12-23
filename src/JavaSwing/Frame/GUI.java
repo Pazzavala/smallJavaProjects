@@ -1,4 +1,4 @@
-package JavaSwing.FRAME;
+package JavaSwing.Frame;
 
 public class GUI {
     public static void main(String[] args) {

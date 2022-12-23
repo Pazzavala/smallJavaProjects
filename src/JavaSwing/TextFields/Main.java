@@ -1,7 +1,4 @@
-package JavaSwing.textField;
-
-import javax.swing.*;
-import java.awt.*;
+package JavaSwing.TextFields;
 
 public class Main {
 //    JTextField - A GUI text component that can be used to add, set, or get text

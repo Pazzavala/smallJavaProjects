@@ -1,4 +1,4 @@
-package JavaSwing.textField;
+package JavaSwing.TextFields;
 
 import javax.swing.*;
 import java.awt.*;
