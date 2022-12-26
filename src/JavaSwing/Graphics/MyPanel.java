@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class MyPanel extends JPanel {
-    Image image = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\dribble.png").getImage();
+    Image image = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Basic\\Images\\dribble.png").getImage();
     MyPanel() {
         this.setPreferredSize(new Dimension(1000, 500));
     }

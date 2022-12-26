@@ -29,7 +29,7 @@ public class MyFrame extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == button) {
-            JColorChooser colorChooser = new JColorChooser();
+            // JColorChooser colorChooser = new JColorChooser();
 
             Color color = JColorChooser.showDialog(null, "Picka a color", Color.BLACK);
             Color color1 = JColorChooser.showDialog(null, "pick backgroun", Color.WHITE);

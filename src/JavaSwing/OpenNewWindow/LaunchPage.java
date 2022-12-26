@@ -26,7 +26,7 @@ public class LaunchPage implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == myButton) {
             frame.dispose();   // if you want only 1 window open
-            NewWindow myWindow = new NewWindow();
+            new NewWindow();
         }
     }
 }

@@ -14,7 +14,6 @@ public class Bicycle extends Vehicle {
     //  Here is our abstract method from vehicle class that we have to implement
     @Override
     void move(int miles) {
-        // TODO Auto-generated method stub
         System.out.println("You moved " + miles + " miles");
     }
     

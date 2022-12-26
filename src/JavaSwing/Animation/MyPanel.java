@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 
 public class MyPanel extends JPanel implements ActionListener {
     Image enemy;
-    Image backgroundImage= new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\background1.jpg").getImage();
+    Image backgroundImage= new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Basic\\Images\\background1.jpg").getImage();
     final int PANEL_WIDTH = backgroundImage.getWidth(null);
     final int PANEL_HEIGHT = backgroundImage.getHeight(null);
 
@@ -21,7 +21,7 @@ public class MyPanel extends JPanel implements ActionListener {
         this.setPreferredSize(new Dimension(PANEL_WIDTH, PANEL_HEIGHT));
         this.setBackground(Color.BLACK);
 
-        enemy = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\red.png").getImage();
+        enemy = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Basic\\Images\\red.png").getImage();
         timer = new Timer(10, this);
 
         timer.start();

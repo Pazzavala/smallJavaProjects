@@ -8,6 +8,6 @@ public class Main {
 //                      can assign keystrokes tp individual Swing Components
 //                      more difficult to utilize and set up
     public static void main(String[] args) {
-        Game game = new Game();
+        new Game();
     }
 }

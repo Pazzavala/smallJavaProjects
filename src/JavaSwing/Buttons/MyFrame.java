@@ -11,8 +11,8 @@ public class MyFrame extends JFrame implements ActionListener {
     JLabel label;
     MyFrame() {
 
-        ImageIcon icon = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\bmo.png");
-        ImageIcon icon2 = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\icons8-black-cat-48.png");
+        ImageIcon icon = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Basic\\Images\\bmo.png");
+        ImageIcon icon2 = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Basic\\Images\\icons8-black-cat-48.png");
 
         label = new JLabel();
         label.setIcon(icon2);

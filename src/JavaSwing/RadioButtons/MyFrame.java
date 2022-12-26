@@ -17,9 +17,9 @@ public class MyFrame extends JFrame implements ActionListener {
         burgerButton = new JRadioButton("Burger");
         hotdogButton = new JRadioButton("hotdog");
 
-        pizza = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\pizza.png");
-        burger = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\hamburger.png");
-        hotdog = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\hotdog.png");
+        pizza = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Basic\\Images\\pizza.png");
+        burger = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Basic\\Images\\hamburger.png");
+        hotdog = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Basic\\Images\\hotdog.png");
 
         pizzaButton.setIcon(pizza);
         burgerButton.setIcon(burger);

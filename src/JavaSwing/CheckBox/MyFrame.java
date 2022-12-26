@@ -14,8 +14,8 @@ public class MyFrame extends JFrame implements ActionListener {
         button = new JButton("Submit");
         button.addActionListener(this);
 
-        checkMark = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\check.png");
-        xMark = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Images\\x.png");
+        checkMark = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Basic\\Images\\check.png");
+        xMark = new ImageIcon("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Basic\\Images\\x.png");
 
         checkBox = new JCheckBox("Worked-out");
         checkBox.setFocusable(false);

@@ -5,7 +5,7 @@ import java.io.File;
 public class Main {
     public static void main(String[] args) {
 //        file - an abstract representation of file and directory pathname
-        File file = new File("Secrete_message_project.txt");
+        File file = new File("/Users/pazzavala/Desktop/Java Projects/smallJavaProjects/src/Basic/Files/Secrete_message_project.txt");
         File file2 = new File("C:\\Users\\Maria Zavala\\Desktop\\GitHub\\Java Master\\smallJavaProjects\\src\\Basic\\Files\\Secrete_message_File.txt");
         File file3 = new File("C:/Users/Maria Zavala/Desktop/GitHub/Java Master/smallJavaProjects/src/Basic/OOP/Secrete_message_OOP");
 

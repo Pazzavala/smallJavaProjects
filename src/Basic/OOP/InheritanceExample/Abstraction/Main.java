@@ -26,7 +26,7 @@ public class Main {
         // When adding the word abstract we cant craeate an object of vehicle
         // Vehicle vehicle = new Vehicle();
 
-        Car[] allCars = new  Car[3];
+        Car[] allCars = new Car[3];
         Garage myGarage = new Garage();
 
         // These both have these methods bc they inherited Vehicle
@@ -47,7 +47,7 @@ public class Main {
 
         allCars[0] = myCar;
         allCars[1] = yourCar;
-        allCars[2] = otherCar;
+        allCars[2] = car3;
 
         myGarage.park(myCar);
 

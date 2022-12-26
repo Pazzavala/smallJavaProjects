@@ -7,7 +7,7 @@ public class A {
     public static void main(String[] args) {
         C c = new C();
 
-        B b = new B();
+        // B b = new B();
         // We cant acces this bc different package
         // System.out.println(c.defaultMessage);
         
@@ -15,6 +15,8 @@ public class A {
         // Public allows variables or methods or classes to be 
         // accessed from anywhere within the project.
         System.out.println(c.publicMessage);
+        // System.out.println(b.privateMessage);
+
 
         // Cant do this bc its private
         // System.out.println(b.privateMessage);

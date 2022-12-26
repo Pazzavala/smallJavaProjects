@@ -2,9 +2,6 @@ package Basic;
 
 import java.text.DecimalFormat;
 
-import javax.swing.plaf.synth.SynthEditorPaneUI;
-import javax.swing.plaf.synth.SynthTextAreaUI;
-
 public class FormatPrint {
     public static void main(String[] args) {
         DecimalFormat df = new DecimalFormat("#.##");
