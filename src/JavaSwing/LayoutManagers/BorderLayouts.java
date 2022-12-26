@@ -18,7 +18,6 @@ public class BorderLayouts {
         frame.setSize(500,500);
 //        The arguments 10, 10 are margin to panels
         frame.setLayout(new BorderLayout(10, 10)); // this is already default but we still adding it for ex
-        frame.setVisible(true);
 
         JPanel panel1 = new JPanel();
         JPanel panel2 = new JPanel();
@@ -38,11 +37,6 @@ public class BorderLayouts {
         panel4.setPreferredSize(new Dimension(100, 100));
         panel5.setPreferredSize(new Dimension(100, 100));
 
-        frame.add(panel1, BorderLayout.NORTH);
-        frame.add(panel2, BorderLayout.EAST);
-        frame.add(panel3, BorderLayout.SOUTH);
-        frame.add(panel4, BorderLayout.WEST);
-        frame.add(panel5, BorderLayout.CENTER);
 
 //        SUB panels
         panel5.setLayout(new BorderLayout());
@@ -70,5 +64,14 @@ public class BorderLayouts {
         panel5.add(subPanel3, BorderLayout.SOUTH);
         panel5.add(subPanel4, BorderLayout.WEST);
         panel5.add(subPanel5, BorderLayout.CENTER);
+
+        frame.add(panel1, BorderLayout.NORTH);
+        frame.add(panel2, BorderLayout.EAST);
+        frame.add(panel3, BorderLayout.SOUTH);
+        frame.add(panel4, BorderLayout.WEST);
+        frame.add(panel5, BorderLayout.CENTER);
+
+        frame.setVisible(true);
+
     }
 }
