@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class TicTacToe extends JFrame implements ActionListener {
     boolean xTurn;
-    boolean keepPlaying = true;
+    boolean keepPlaying = false;
     JButton replay = new JButton("Replay");
     JButton quit = new JButton("Quit");
     JPanel gameButtonsPanel = new JPanel();
@@ -24,21 +24,85 @@ public class TicTacToe extends JFrame implements ActionListener {
     Random rand = new Random();
 
     TicTacToe() {
-        drawBoard();
+        xTurn = firstTurn();
+
+        title.setFont(new Font("Tahoma", Font.BOLD,  75));
+        title.setForeground(Color.WHITE);
+
+        titlePanel.setPreferredSize(new Dimension(500, 100));
+        titlePanel.setBackground(Color.DARK_GRAY);
+        titlePanel.add(title);
+
+        gamePanel.setLayout(new GridLayout(3, 3));
+        gamePanel.setPreferredSize(new Dimension(500, 500));
+        gamePanel.setBackground(Color.BLACK);
+
+        for (int i = 0; i < 9; i++) {
+            buttons[i] = new JButton();
+            buttons[i].addActionListener(this);
+            gamePanel.add(buttons[i]);
+        }
+
+        replay.addActionListener(this);
+        replay.setSize(new Dimension(6, 3));
+        replay.setFont(new Font("Ink Free", Font.BOLD,  20));
+
+        quit.addActionListener(this);
+        quit.setSize(new Dimension(6, 3));
+        quit.setFont(new Font("Ink Free", Font.BOLD,  20));
+
+        gameButtonsPanel.setLayout(new GridLayout());
+
+        gameButtonsPanel.add(replay);
+        gameButtonsPanel.add(quit);
+
+        xScore.setFont(new Font("Tahoma", Font.BOLD,  50));
+        xScore.setForeground(Color.RED);
+        oScore.setFont(new Font("Tahoma", Font.BOLD,  50));
+        oScore.setForeground(Color.BLUE);
+
+        scorePanel.setLayout(new BorderLayout());
+
+        scorePanel.add(xScore, BorderLayout.EAST);
+        scorePanel.add(gameButtonsPanel, BorderLayout.CENTER);
+        scorePanel.add(oScore, BorderLayout.WEST);
+
+        this.setSize(new Dimension(600,600));
+        this.setLayout(new BorderLayout());
+
+        this.add(titlePanel, BorderLayout.NORTH);
+        this.add(gamePanel, BorderLayout.CENTER);
+        this.add(scorePanel, BorderLayout.SOUTH);
+
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setTitle("TicTacToe");
+        this.setVisible(true);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
 
-        if (e.getSource() == replay)
+//        if players press replay reset the board else exit when quit
+        if (e.getSource() == replay) {
+            keepPlaying = true;
+            for (int i = 0; i < 9; i++) {
+                buttons[i].setText("");
+                buttons[i].setEnabled(true);
 
-            drawBoard();
-        else if (e.getSource() == quit)
+                if (xTurn)
+                    title.setText("X Turn");
+                else
+                    title.setText("O Turn");
+
+
+            }
+        } else if (e.getSource() == quit) {
             System.exit(0);
+        }
 
         for (int i = 0; i < 9; i++) {
             if (e.getSource() == buttons[i]) {
-                buttons[i].setFont(new Font("Mv Boli", Font.BOLD, 60));
+                buttons[i].setFont(new Font("Tahoma", Font.BOLD, 90));
 
                 if (xTurn) {
                     if (buttons[i].getText().equals("")) {
@@ -61,63 +125,14 @@ public class TicTacToe extends JFrame implements ActionListener {
         }
     }
 
-    public void drawBoard() {
-        xTurn = firstTurn();
-
-        gameButtonsPanel.setLayout(new GridLayout());
-
-        replay.setSize(new Dimension(6, 3));
-        quit.setSize(new Dimension(6, 3));
-
-        replay.setFont(new Font("Ink Free", Font.BOLD,  20));
-        quit.setFont(new Font("Ink Free", Font.BOLD,  20));
-
-        replay.addActionListener(this);
-        quit.addActionListener(this);
-
-        gameButtonsPanel.add(replay);
-        gameButtonsPanel.add(quit);
-
-        title.setFont(new Font("Ink Free", Font.BOLD,  75));
-        title.setForeground(Color.WHITE);
-
-        titlePanel.setPreferredSize(new Dimension(500, 100));
-        titlePanel.setBackground(Color.DARK_GRAY);
-        titlePanel.add(title);
-
-        gamePanel.setLayout(new GridLayout(3, 3));
-        gamePanel.setPreferredSize(new Dimension(500, 500));
-        gamePanel.setBackground(Color.BLACK);
-
-        scorePanel.setLayout(new BorderLayout());
-
-        oScore.setFont(new Font("Ink Free", Font.BOLD,  50));
-        scorePanel.add(xScore, BorderLayout.EAST);
-
-        scorePanel.add(gameButtonsPanel, BorderLayout.CENTER);
-
-        xScore.setFont(new Font("Ink Free", Font.BOLD,  50));
-        scorePanel.add(oScore, BorderLayout.WEST);
-
-        for (int i = 0; i < 9; i++) {
-            buttons[i] = new JButton();
-            buttons[i].addActionListener(this);
-            gamePanel.add(buttons[i]);
+//    Set who starts first random
+    public boolean firstTurn() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
 
-        this.setSize(new Dimension(600,600));
-        this.setLayout(new BorderLayout());
-
-        this.add(titlePanel, BorderLayout.NORTH);
-        this.add(gamePanel, BorderLayout.CENTER);
-        this.add(scorePanel, BorderLayout.SOUTH);
-
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setTitle("TicTacToe");
-        this.setVisible(true);
-    }
-
-    public boolean firstTurn() {
         if(rand.nextInt(2) == 0) {
             title.setText("X Turn");
             return true;
@@ -127,6 +142,7 @@ public class TicTacToe extends JFrame implements ActionListener {
         }
     }
 
+//    Check winning combos
     public void checkWins() {
 //        Horizontal
         if (buttons[0].getText().equals("X") && buttons[1].getText().equals("X")  && buttons[2].getText().equals("X")) {
@@ -176,10 +192,8 @@ public class TicTacToe extends JFrame implements ActionListener {
         }
     }
 
+//    Display when X wins
     public void xWin(int a, int b, int c) {
-        buttons[a].setForeground(Color.GREEN);
-        buttons[b].setForeground(Color.GREEN);
-        buttons[c].setForeground(Color.GREEN);
 
         for (int i = 0; i < 9; i++) {
             if (i == a || i == b || i == c) {
@@ -188,11 +202,17 @@ public class TicTacToe extends JFrame implements ActionListener {
                 buttons[i].setEnabled(false);
             }
         }
+
+        buttons[a].setForeground(Color.GREEN);
+        buttons[b].setForeground(Color.GREEN);
+        buttons[c].setForeground(Color.GREEN);
         title.setText("X wins!");
         xScore.setText("X: " + (++xPoints));
 
+        keepPlaying = false;
     }
 
+//    Display when X wins
     public void oWin(int a, int b, int c) {
         for (int i = 0; i < 9; i++) {
             if (i == a || i == b || i == c) {
@@ -207,6 +227,8 @@ public class TicTacToe extends JFrame implements ActionListener {
         buttons[c].setForeground(Color.GREEN);
         title.setText("O wins!");
         oScore.setText("O: " + (++oPoints));
+
+        keepPlaying = false;
     }
 }
 
