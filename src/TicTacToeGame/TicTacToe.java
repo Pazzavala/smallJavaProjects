@@ -15,7 +15,7 @@ public class TicTacToe extends JFrame implements ActionListener {
     JPanel gamePanel = new JPanel();
     JPanel scorePanel = new JPanel();
     JButton[] buttons = new JButton[9];
-    JLabel title = new JLabel("TicTacToe");
+    JLabel title = new JLabel("Tic-Tac-Toe");
     int xPoints = 0;
     int oPoints = 0;
     JLabel xScore = new JLabel("X: " + xPoints);
@@ -24,7 +24,6 @@ public class TicTacToe extends JFrame implements ActionListener {
     Random rand = new Random();
 
     TicTacToe() {
-        xTurn = firstTurn();
 
         title.setFont(new Font("Tahoma", Font.BOLD,  75));
         title.setForeground(Color.WHITE);
@@ -75,8 +74,10 @@ public class TicTacToe extends JFrame implements ActionListener {
         this.add(scorePanel, BorderLayout.SOUTH);
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setTitle("TicTacToe");
+        this.setTitle("Tic-Tac-Toe");
         this.setVisible(true);
+
+        xTurn = firstTurn();
     }
 
     @Override
@@ -128,7 +129,7 @@ public class TicTacToe extends JFrame implements ActionListener {
 //    Set who starts first random
     public boolean firstTurn() {
         try {
-            Thread.sleep(1000);
+            Thread.sleep(800);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
